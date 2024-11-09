@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "hacked-client",
+	"version": "${version}",
+	"name": "Hacked Client",
+	"description": "A Minecraft Hacked Client for 1.20.1. A Something Awesome project for COMP6841.",
+	"authors": [
+		"makepai"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/hacked-client/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.makepai.hackedclient.HackedClient"
+		],
+		"client": [
+			"net.makepai.hackedclient.HackedClientClient"
+		],
+		"fabric-datagen": [
+			"net.makepai.hackedclient.HackedClientDataGenerator"
+		]
+	},
+	"mixins": [
+		"hacked-client.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

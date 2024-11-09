@@ -1,0 +1,17 @@
+{
+	"required": true,
+	"package": "net.makepai.hackedclient.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"ExampleMixin",
+		"GameMenuScreenMixin",
+		"PlayerEntityMixin",
+		"LivingEntityMixin",
+		"EntityMixin",
+		"PlayerAbilitiesS2CPacketMixin",
+		"LightmapTextureManagerMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
